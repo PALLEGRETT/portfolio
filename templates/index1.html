@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cifrario di Cesare</title>
+</head>
+<body>
+    <h1>Cifrario di Cesare</h1>
+    <form method="POST">
+        <label for="parola">Parola:</label><br>
+        <input type="text" id="parola" name="parola"><br>
+        <label for="chiave">Chiave:</label><br>
+        <input type="number" id="chiave" name="chiave"><br>
+        <input type="submit" value="Cifra">
+    </form>
+    {% if risultato %}
+    <h2>Parola cifrata: {{ risultato }}</h2>
+    {% endif %}
+</body>
+</html>
